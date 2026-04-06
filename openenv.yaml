@@ -1,0 +1,20 @@
+spec_version: 1
+name: ticket_router
+description: >
+  TicketRouterEnv simulates SaaS support triage — route tickets to engineering, billing,
+  sales, or trust & safety; assign priority P1–P4 and first-response SLA (1h–72h).
+  Rewards combine correctness, SLA adherence, load balance, and customer satisfaction
+  proxies; three tasks span clear routing, ambiguous multi-team tickets, and
+  capacity-constrained hard episodes.
+version: "1.0.0"
+type: space
+runtime: fastapi
+app: server.app:app
+port: 8000
+tasks:
+  - name: ticket_router_easy
+    description: Clear labels; one correct team; deterministic grading.
+  - name: ticket_router_medium
+    description: Ambiguous tickets; multiple acceptable routes; tier-dependent gold labels.
+  - name: ticket_router_hard
+    description: Tight team capacities; sequential routing; trade off SLA risk vs load balancing.
