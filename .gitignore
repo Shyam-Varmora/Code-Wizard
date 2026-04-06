@@ -1,0 +1,31 @@
+# Virtual environments (never commit — HF/Docker install deps fresh)
+.venv/
+venv/
+# Do not ignore ./env/ — this repo's OpenEnv package lives in env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Test / coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
