@@ -1,3 +1,12 @@
+---
+title: Cord Wizard
+emoji: ??
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
 # TicketRouterEnv
 
 OpenEnv environment that simulates **SaaS customer support triage**: for each ticket the agent chooses a **route** (engineering, billing, sales, trust_safety), a **priority** (P1–P4), and a **first-response SLA** (1h, 4h, 24h, 72h). Episodes queue **5–15** tickets (task-dependent). Episodes end when the queue is exhausted or when the **SLA failure budget** is exceeded.
@@ -165,3 +174,4 @@ You can keep the problem statement / sample inference as reference under `docs/`
 ## License
 
 This environment was authored for the Meta × PyTorch OpenEnv Hackathon; consult your submission’s license terms.
+
