@@ -1,5 +1,13 @@
 ---
 title: Cord Wizard
+colorFrom: blue
+colorTo: green
+sdk: docker
+pinned: false
+---
+
+---
+title: Cord Wizard
 emoji: ??
 colorFrom: blue
 colorTo: green
@@ -174,4 +182,5 @@ You can keep the problem statement / sample inference as reference under `docs/`
 ## License
 
 This environment was authored for the Meta × PyTorch OpenEnv Hackathon; consult your submission’s license terms.
+
 
